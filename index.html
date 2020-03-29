@@ -64,7 +64,7 @@
         var number = 0;
         function Datetime() {
             var today = new Date();
-            var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+            var time = today.getHours() + ":" + ("0" + today.getMinutes()).slice(-2) + ":" + ("0" + today.getSeconds()).slice(-2);
             return time;
         }
         function RandomNumber() {
